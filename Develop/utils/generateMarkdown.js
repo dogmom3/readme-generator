@@ -2,34 +2,51 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   console.log(license);
-  let licenseBadge = [];
+  // let licenseBadge = [];
   if (license.includes('Apache 2.0 License')) {
-    licenseBadge +=
-      '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+    // licenseBadge +=
+      return'[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
   }
-
   if (license.includes('Boost Software License 1.0')) {
-    // licenseBadge =
-
+    return'[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
   }
-
   if (license.includes('BSD 3-Clause License')) {
-    // licenseBadge =
-
+    return'[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
+  }
+  else { 
+    return '';
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  if (license,includes('Apache 2.0 License')) {
+    return'[![License: ${license}](https://opensource.org/licenses/Apache-2.0)';
+  }
+  if (license.includes('Boost Software License 1.0')) {
+    return'[![License: ${license}](https://opensource.org/licenses/Boost-Software-1.0)';
+  }
+  if (license.includes('BSD 3-Clause License')) {
+    return'[![License: ${license}](https://opensource.org/licenses/BSD-3-Clause)';
+  }
+  else {
+    return '';
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+if (license == 'none') {
+  return '';
 }
+else {
+  return `${renderLicenseLink(license)}
+  ${renderLicenseBadge(license)}`;
+}
+}
+
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
