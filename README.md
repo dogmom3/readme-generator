@@ -1,16 +1,12 @@
-<!-- [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) -->
-
 # PROFESSIONAL README GENERATOR
 
 ## Description
-My motivation in creating this file generator is to expand my knowledge with using Node.Js
+My motivation in creating this file generator is to expand my knowledge with using Node.Js.
 I built this project to assist in making professional README.md files.
-This will help make README files a lot quicker and simpler to do, allowing me to focus on other aspects of the project.
+This will make them a lot quicker and simpler to do thus allowing me to focus on other aspects of the project.
 I learned how to use Node.js and the inquirer package to help further my coding abilities.
 
 ## Table of Contents 
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)

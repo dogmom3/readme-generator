@@ -1,6 +1,4 @@
-
   # breakfast
-  # undefined
 
   ## Project Description 
   granola, yogurt and vegan sausage
@@ -29,6 +27,7 @@
   by eating it
 
   ## Contact Information 
+  
   ### To view more of my projects, check out my GitHub profile here: https://github.com/dogmom3
   ### Feel free to contact me by email at blair.seivers@gmail.com
   
