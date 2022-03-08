@@ -1,21 +1,23 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  console.log(license);
-  // let licenseBadge = [];
+  console.log('license', license);
+  let licenseBadge = [];
   if (license.includes('Apache 2.0 License')) {
-    // licenseBadge +=
-    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
+    licenseBadge.push('![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)')
+    // return.push '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
   }
   if (license.includes('Boost Software License 1.0')) {
-    return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)';
+    licenseBadge.push('![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)')
   }
   if (license.includes('BSD 3-Clause License')) {
-    return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)';
+    licenseBadge.push('![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)')
   }
-  else {
-    return '';
-  }
+if(licenseBadge.length === 0) {
+  return ''
+} else {
+  return licenseBadge
+}
 }
 
 // TODO: Create a function that returns the license link
@@ -50,10 +52,10 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // console.log('test', renderLicenseBadge(data.license))
   return `
   # ${data.title}
   # ${renderLicenseBadge(data.license)}
-
   ## Project Description 
   ${data.description}
 
