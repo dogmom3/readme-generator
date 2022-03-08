@@ -1,8 +1,8 @@
 
-  # f
-  # ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg),![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg),![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
+  # readme generator
+  # ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
   ## Project Description 
-  f
+  a generator designed to help make a readme file that looks clean and professional
 
   ## Table of Contents
   -[Installation](#Installation-Process)
@@ -10,24 +10,24 @@
   -[License](#License)
   -[Contributers](#Contributers)
   -[Testing](#Testing)
-  -[Contact](#Contact-Information)
+  -[Questions](#Contact-Information)
 
   ## Installation Process 
-  f
+  install node on your computer and then run npm i in the terminal
 
   ## Usage Instructions 
-  f
+  to generate professional looking resumes in minimal time
 
   ## License 
-  Apache 2.0 License,Boost Software License 1.0,BSD 3-Clause License
+  Apache 2.0 License
 
   ## Contributers 
-  g
+  myself
 
   ## Testing 
-  g
+  no tests required for this project
 
-  ## Contact Information 
-  ### To view more of my projects, check out my GitHub profile here: https://github.com/g
-  ### Feel free to contact me by email at g
+  ## Questions 
+  ### To view more of my projects, check out my GitHub profile here: https://github.com/dogmom3
+  ### Feel free to contact me by email at blair.seivers@gmail.com
   ;

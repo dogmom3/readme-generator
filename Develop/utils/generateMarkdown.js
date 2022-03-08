@@ -1,11 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   console.log('license', license);
   let licenseBadge = [];
   if (license.includes('Apache 2.0 License')) {
     licenseBadge.push('![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)')
-    // return.push '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]';
   }
   if (license.includes('Boost Software License 1.0')) {
     licenseBadge.push('![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)')
@@ -20,8 +17,6 @@ if(licenseBadge.length === 0) {
 }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license, includes('Apache 2.0 License')) {
     return '[![License: ${license}](https://opensource.org/licenses/Apache-2.0)';
@@ -37,8 +32,6 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license == 'none') {
     return '';
@@ -49,10 +42,7 @@ function renderLicenseSection(license) {
   }
 }
 
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  // console.log('test', renderLicenseBadge(data.license))
   return `
   # ${data.title}
   # ${renderLicenseBadge(data.license)}
@@ -65,7 +55,7 @@ function generateMarkdown(data) {
   -[License](#License)
   -[Contributers](#Contributers)
   -[Testing](#Testing)
-  -[Contact](#Contact-Information)
+  -[Questions](#Contact-Information)
 
   ## Installation Process 
   ${data.installation}
@@ -82,7 +72,7 @@ function generateMarkdown(data) {
   ## Testing 
   ${data.tests}
 
-  ## Contact Information 
+  ## Questions 
   ### To view more of my projects, check out my GitHub profile here: https://github.com/${data.username}
   ### Feel free to contact me by email at ${data.email}
   ;`

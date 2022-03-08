@@ -116,7 +116,6 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
-
   const pageREADME = generatePage(data);
   fs.writeFile(fileName, pageREADME, err => {
     if (err) throw err;
@@ -125,16 +124,12 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app
 function init() {
   inquirer
     .prompt(questions)
     .then((answers) => {
       writeToFile('readme-generator.md', answers)
       console.log(answers)
-
-
-      // Use user feedback for... whatever!!
     })
     .catch((error) => {
       console.log(error)
