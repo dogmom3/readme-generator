@@ -18,7 +18,7 @@ if(licenseBadge.length === 0) {
 }
 
 function renderLicenseLink(license) {
-  if (license, includes('Apache 2.0 License')) {
+  if (license.includes('Apache 2.0 License')) {
     return '[![License: ${license}](https://opensource.org/licenses/Apache-2.0)';
   }
   if (license.includes('Boost Software License 1.0')) {
